@@ -1,7 +1,7 @@
 //CountHitAndBlow.c
 /*
 파일 이름: CountHitAndBlow.c
-기     능: 4개의 정답과 수를 입력받아 히트와 블로우를 구한다.
+기     능: 4개의 정답들과 수를 입력받아 히트와 블로우를 구한다.
 작 성  자: 송 용 단
 작성 일자: 2015년 8월 10일
 */
@@ -29,9 +29,9 @@ int main(int argc, char *argv[]) {
 
 /*
 함수 이름: Input
-기     능: 정답과 수들을 입력받는다.
+기     능: 정답들과 수들을 입력받는다.
 입     력: 없음
-출     력: 정답과 수들
+출     력: 정답들과 수들
 */
 void Input(ULong(*answers), ULong(*numbers)) {
 	ULong i;
@@ -44,3 +44,10 @@ void Input(ULong(*answers), ULong(*numbers)) {
 		scanf("%d", numbers + i);
 	}
 }
+
+/*
+함수 이름: CountHitAndBlow
+기     능: 정답들과 수들을 입력받아 히트와 블로우를 구한다.
+입     력: 정답들과 수들
+출     력: 히트와 블로우
+*/
