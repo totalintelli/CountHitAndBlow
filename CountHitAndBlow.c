@@ -51,3 +51,22 @@ void Input(ULong(*answers), ULong(*numbers)) {
 입     력: 정답들과 수들
 출     력: 히트와 블로우
 */
+void CountHitAndBlow(ULong(*answers), ULong(*numbers), ULong *hit, ULong *blow) {
+	ULong i;
+	ULong j;
+	*hit = 0;
+	*blow = 0;
+
+	for (i = 0; i < MAX; i++) {
+		for (j = 0; j < MAX; j++) {
+			if (answers[i] = numbers[j]) {
+				if (i = j) {
+					(*hit)++;
+				}
+				else {
+					(*blow)++;
+				}
+			}
+		}
+	}
+}
