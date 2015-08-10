@@ -70,3 +70,13 @@ void CountHitAndBlow(ULong(*answers), ULong(*numbers), ULong *hit, ULong *blow) 
 		}
 	}
 }
+
+/*
+함수 이름: Output
+기     능: 히트와 블로우를 입력받아 모니터에 메시지를 출력한다.
+입     력: 히트, 블로우
+출     력: 없음
+*/
+void Output(ULong hit, ULong blow) {
+	print("%d HIT, %d BLOW", hit, blow);
+}
