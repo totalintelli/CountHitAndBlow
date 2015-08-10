@@ -5,8 +5,9 @@
 작 성  자: 송 용 단
 작성 일자: 2015년 8월 10일
 */
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#define MAX 4	
+#define MAX 4
 typedef unsigned long int ULong;
 
 int main(int argc, char *argv[]);
@@ -59,8 +60,8 @@ void CountHitAndBlow(ULong(*answers), ULong(*numbers), ULong *hit, ULong *blow) 
 
 	for (i = 0; i < MAX; i++) {
 		for (j = 0; j < MAX; j++) {
-			if (answers[i] = numbers[j]) {
-				if (i = j) {
+			if (answers[i] == numbers[j]) {
+				if (i == j) {
 					(*hit)++;
 				}
 				else {
@@ -78,5 +79,5 @@ void CountHitAndBlow(ULong(*answers), ULong(*numbers), ULong *hit, ULong *blow) 
 출     력: 없음
 */
 void Output(ULong hit, ULong blow) {
-	print("%d HIT, %d BLOW", hit, blow);
+	printf("%d HIT, %d BLOW\n", hit, blow);
 }
